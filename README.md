@@ -122,6 +122,8 @@ This will be the location of the output folder for the CS 4321 project.
 
 Note: The fact that you are reading this means that you are most likely a TA for CS 4320/1. You should have all the credentials needed to test that Aultron has been installed correctly. You will also need to have already been a TA for CS 4320/1 for a single semester so that you have previous student submissions to test Aultron on.
 
+If you are a TA but do not have access to previous submissions, the test files folder has some dummy submissions that can be used for testing prepare and testing grading.
+
 
 Aultron is essentially a set of scripts that do three major things: download all submissions, prep all submissions for grading, grade each submission. Therefore, we will check that Aultron works correctly in three parts. In this repo is a test folder that contains three scripts.
 ```
