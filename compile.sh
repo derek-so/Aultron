@@ -4,7 +4,7 @@ log=/log.txt
 input=/input
 output=/output
 
-for filename in /home/dso/Grading/*;
+for filename in $1*;
 do
     for jar in $filename/*.jar;
     do

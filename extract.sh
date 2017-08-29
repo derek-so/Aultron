@@ -8,7 +8,7 @@ do
 done
 
 b="/Submission.zip"
-for file in $2Submissions/*;
+for file in $2/Submissions/*;
 do
     unzip "$file$b" -d $file;
     echo $file$b;

@@ -4,8 +4,9 @@ testDir=$2;
 
 rm -rf $testDir*;
 
-for filename in $3Submissions/*;
+for filename in $3/Submissions/*;
 do
+    echo $filename;
     if [ -d "$newDir$(basename $filename)" ];
     then
         diff -rw $newDir$(basename $filename) $filename;
@@ -17,11 +18,12 @@ do
             cp -r "$filename" "$testDir"
         fi
     else
+        echo extracting $filename to $newDir
         cp -r "$filename" "$newDir"
+        echo extracting $filename to $testDir
         cp -r "$filename" "$testDir"
     fi
 done
-
 for file in $2*;
 do
     echo $file;
