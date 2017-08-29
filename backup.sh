@@ -1,10 +1,10 @@
 #!/bin/bash
-newDir=/home/dso/Previous/;
-testDir=/home/dso/Grading/;
+newDir=$1;
+testDir=$2;
 
-rm -rf $testDir*;
+# rm -rf $testDir*;
 
-for filename in /home/dso/Downloads/Submissions/*;
+for filename in $3Submissions/*;
 do
     if [ -d "$newDir$(basename $filename)" ];
     then
@@ -22,7 +22,7 @@ do
     fi
 done
 
-for file in /home/dso/Grading/*;
+for file in $2*;
 do
     echo $file;
     if [ "$(ls -A $file)" ];

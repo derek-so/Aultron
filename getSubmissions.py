@@ -23,7 +23,7 @@ def getSubmissions(username, password, url):
     login = browser.find_element_by_name("Submit");
     login.click();
 
-    browser.get("https://cms6.csuglab.cornell.edu/web/auth/?action=gradeassign&assignid=15");
+    browser.get(url);
 
     linkar = browser.find_elements_by_link_text("Files");
     for x in linkar:
@@ -32,7 +32,7 @@ def getSubmissions(username, password, url):
 if __name__ == "__main__":
     beginHeadlessMode();
     chromeOptions = Options();
-    prefs = {"download.default_directory" : "/home/dso/Downloads/"};
+    prefs = {"download.default_directory" : sys.argv[4]};
     chromeOptions.add_experimental_option("prefs",prefs);
     browser = webdriver.Chrome("/home/dso/Documents/chromedriver", chrome_options = chromeOptions);
-    getSubmissions("dts76","Kiva!1@2","lol");
+    getSubmissions(sys.argv[1],sys.argv[2],sys.argv[3]);

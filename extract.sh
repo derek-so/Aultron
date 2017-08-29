@@ -1,14 +1,14 @@
 #!/bin/bash
-for filename in /home/dso/Downloads/*.zip;
+for filename in $1*.zip;
 do
     echo $filename
-    unzip "$filename" -d /home/dso/Downloads/;
+    unzip "$filename" -d $2;
     #mv ${filename%.zip} /home/dso/Downloads/temp/;
     #break;
 done
 
 b="/Submission.zip"
-for file in /home/dso/Downloads/Submissions/*;
+for file in $2Submissions/*;
 do
     unzip "$file$b" -d $file;
     echo $file$b;
