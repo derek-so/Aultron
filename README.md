@@ -96,24 +96,12 @@ Explanation of what each folder path is for coming soon. What is import to know 
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+The fact that you are reading this means that you are most likely already a TA for CS 4320/1. You should have all the credentials needed to test Aultron as well as a sample semester to get test projects from.
 
-### Break down into end to end tests
+### Aultron's Output
 
-Explain what these tests test and why
+After running Aultron successfully, a new file called list.txt will be generated. This file contains all the groups whose .jar file has produced an error against our inputs. Inside each group's folder in the grading folder will also be a log.txt file. This log file as the exact error message when we ran their jar file.
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -127,15 +115,15 @@ Add additional notes about how to deploy this on a live system
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please contact me at dts76@cornell.edu if you would like to contribute. There is much work to be done on Aultron!
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Derek So** - *Initial work* - [derekso1](https://github.com/derekso1)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -145,6 +133,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Inspired by the amazing autograders from CS 4410 / 3410
