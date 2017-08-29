@@ -57,15 +57,13 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 A step by step series of examples that tell you have to get a development env running
 
-1.
-Clone this repository. It does not matter where you put it as we will be using absolute paths in our config file.
+1) Clone this repository. It does not matter where you put it as we will be using absolute paths in our config file.
 
 ```
 git clone https://github.com/derekso1/Aultron.git
 ```
 
-2.
-Configure our config file. The config file has the following layout.
+2) Configure our config file. The config file has the following layout.
 ```
 username
 password
@@ -77,7 +75,24 @@ URL of assignment
 /path/to/input/folder
 /path/to/output/folder
 ```
-End with an example of getting some data out of the system or using it for a little demo
+
+Username:
+This is your Cornell NetID.
+
+Password:
+This is your actual Cornell Password.
+
+URL of Assignment:
+This is the Url of the cms page where all the student submissions reside.
+
+/path/to/some/folder:
+Explanation of what each folder path is for coming soon. What is import to know for now is that 6 directories MUST be created and their file paths supplied to this config file for Aultron to run correctly.
+
+3) Run Aultron. Aultron is controlled by the main script master.sh. master.sh takes in a single argument which is our config file. Note that you must run Aultron in the same directory as all the other scripts.
+
+```
+./master.sh <path to config file>
+```
 
 ## Running the tests
 
