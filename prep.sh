@@ -3,10 +3,12 @@
 input=/intput
 output=/output
 
-for filename in /home/dso/Grading/*;
+for filename in $1*;
 do
     rm -rf $filename$input
     rm -rf $filename$output
-    cp -r "/home/dso/input" $filename;
-    cp -r "/home/dso/output" $filename;
+    cp -r $2 $filename;
+    cp -r $3 $filename;
 done
+
+sleep 5

@@ -2,7 +2,7 @@
 newDir=$1;
 testDir=$2;
 
-# rm -rf $testDir*;
+rm -rf $testDir*;
 
 for filename in $3Submissions/*;
 do
@@ -32,3 +32,5 @@ do
         rmdir "$file"
     fi
 done
+
+sleep 5

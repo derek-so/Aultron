@@ -13,7 +13,7 @@ The following instructions are for the two most popular Linux distributions Fedo
 
 #### Fedora
 
-##### Python 2.7
+#####Python 2.7
 
 Fedora comes with python 2 pre-installed. If for some reason you need to install it again, you can install it from Fedora's package manager dnf.
 

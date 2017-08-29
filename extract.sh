@@ -13,3 +13,5 @@ do
     unzip "$file$b" -d $file;
     echo $file$b;
 done
+
+sleep 5

@@ -1,4 +1,5 @@
 import sys
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -9,6 +10,7 @@ from pyvirtualdisplay import Display
 def beginHeadlessMode():
     display = Display(visible=0, size=(1800, 1600));
     display.start();
+    return display;
 
 def getSubmissions(username, password, url):
     browser.get("https://cms.csuglab.cornell.edu/web/guest/");
@@ -30,9 +32,13 @@ def getSubmissions(username, password, url):
         x.click();
 
 if __name__ == "__main__":
-    beginHeadlessMode();
+    x = beginHeadlessMode();
     chromeOptions = Options();
     prefs = {"download.default_directory" : sys.argv[4]};
     chromeOptions.add_experimental_option("prefs",prefs);
     browser = webdriver.Chrome("/home/dso/Documents/chromedriver", chrome_options = chromeOptions);
     getSubmissions(sys.argv[1],sys.argv[2],sys.argv[3]);
+    time.sleep(60);
+    browser.quit();
+    x.stop();
+
