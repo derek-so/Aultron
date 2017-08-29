@@ -1,0 +1,13 @@
+Current:
+1. choice to rerun on all backed up submissions
+2. move input and output folder to every submission
+3. run provided test cases
+4. email students the results
+
+
+
+
+LTP's:
+1. Servers?
+2. Scalability?
+3. Email?
