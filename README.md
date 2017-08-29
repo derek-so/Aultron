@@ -13,7 +13,7 @@ The following instructions are for the two most popular Linux distributions Fedo
 
 #### Fedora
 
-#####Python 2.7
+##### Python 2.7
 
 Fedora comes with python 2 pre-installed. If for some reason you need to install it again, you can install it from Fedora's package manager dnf.
 
@@ -45,16 +45,38 @@ A nice package we can use for python that handles the Xvfb for us.
 dnf install pyvirtualdisplay
 ```
 
+##### ChromeDriver
+
+Chrome driver is needed for selenium to run properly. You can get chrome driver for your machine at the following url. Simply download + extract the version that matches your machine and you're good to go.
+
+```
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+```
+
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Clone the Repository
+1.
+Clone this repository. It does not matter where you put it as we will be using absolute paths in our config file.
 
 ```
-git clone <git url>
+git clone https://github.com/derekso1/Aultron.git
 ```
 
+2.
+Configure our config file. The config file has the following layout.
+```
+username
+password
+URL of assignment
+/path/to/download/folder
+/path/to/temp/extract/folder
+/path/to/backup/folder
+/path/to/grading/folder
+/path/to/input/folder
+/path/to/output/folder
+```
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
@@ -72,6 +94,7 @@ Give an example
 ### And coding style tests
 
 Explain what these tests test and why
+
 
 ```
 Give an example
