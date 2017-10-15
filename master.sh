@@ -3,7 +3,7 @@
 readarray -t array < $1;
 
 echo "downloading"
-#python getSubmissions.py ${array[0]} ${array[1]} ${array[2]} ${array[3]}
+# python getSubmissions.py ${array[0]} ${array[1]} ${array[2]} ${array[3]}
 echo "finished?"
 
 ./extract.sh ${array[3]} ${array[4]}

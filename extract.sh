@@ -3,8 +3,8 @@ for filename in $1*.zip;
 do
     echo $filename
     unzip "$filename" -d $2;
-    #mv ${filename%.zip} /home/dso/Downloads/temp/;
-    #break;
+    mv ${filename%.zip} /home/dso/Downloads/temp/;
+    break;
 done
 
 b="/Submission.zip"
