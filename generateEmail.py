@@ -7,3 +7,4 @@ with open('list.txt') as netIDS:
             newList = netLists[2:];
             for x in newList:
                 print "email: " + x;
+                print "test";
